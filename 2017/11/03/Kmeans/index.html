@@ -3,17 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Jennie Site to Record 0&amp;1</title>
+  <title>Kmeans使用教程（Java版） | Jennie Site to Record 0&amp;1</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="网站描述">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Jennie Site to Record 0&amp;1">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="Kmeans是一种聚类算法，而聚类算法又隶属于非监督学习，即它可以将相似的对象归到同一个类中，即同类中的对象相似度很高，不同类中的对象相似度很低，有点像全自动分类技术。以下内容将主要介绍Kmeans算法的简单原理及库使用方法。 ##一、Kmeans算法原理简介Kmeans算法的名字（k、means）就已经总结了Kmeans算法的精髓思想，其一是它可以发现K个不同的簇群，其二是计算隶属该簇的所有对象">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Kmeans使用教程（Java版）">
+<meta property="og:url" content="http://yoursite.com/2017/11/03/Kmeans/index.html">
 <meta property="og:site_name" content="Jennie Site to Record 0&amp;1">
-<meta property="og:description" content="网站描述">
+<meta property="og:description" content="Kmeans是一种聚类算法，而聚类算法又隶属于非监督学习，即它可以将相似的对象归到同一个类中，即同类中的对象相似度很高，不同类中的对象相似度很低，有点像全自动分类技术。以下内容将主要介绍Kmeans算法的简单原理及库使用方法。 ##一、Kmeans算法原理简介Kmeans算法的名字（k、means）就已经总结了Kmeans算法的精髓思想，其一是它可以发现K个不同的簇群，其二是计算隶属该簇的所有对象">
+<meta property="og:updated_time" content="2017-11-03T03:03:37.961Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Jennie Site to Record 0&amp;1">
-<meta name="twitter:description" content="网站描述">
+<meta name="twitter:title" content="Kmeans使用教程（Java版）">
+<meta name="twitter:description" content="Kmeans是一种聚类算法，而聚类算法又隶属于非监督学习，即它可以将相似的对象归到同一个类中，即同类中的对象相似度很高，不同类中的对象相似度很低，有点像全自动分类技术。以下内容将主要介绍Kmeans算法的简单原理及库使用方法。 ##一、Kmeans算法原理简介Kmeans算法的名字（k、means）就已经总结了Kmeans算法的精髓思想，其一是它可以发现K个不同的簇群，其二是计算隶属该簇的所有对象">
   
     <link rel="alternate" href="/atom.xml" title="Jennie Site to Record 0&amp;1" type="application/atom+xml">
   
@@ -66,54 +67,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/11/03/hello-world/" class="article-date">
-  <time datetime="2017-11-03T02:41:26.988Z" itemprop="datePublished">2017-11-03</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/11/03/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/11/03/hello-world/" data-id="cj9jbg0su0001lkao8zwwfn27" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-Kmeans" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-Kmeans" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2017/11/03/Kmeans/" class="article-date">
   <time datetime="2017-11-03T00:55:29.000Z" itemprop="datePublished">2017-11-03</time>
@@ -130,8 +84,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/11/03/Kmeans/">Kmeans使用教程（Java版）</a>
+    <h1 class="article-title" itemprop="name">
+      Kmeans使用教程（Java版）
     </h1>
   
 
@@ -193,10 +147,23 @@ step6: 判断：如果任意一个点的簇分配结果发生改变，跳转至s
     </footer>
   </div>
   
-</article>
-
+    
+<nav id="article-nav">
+  
+    <a href="/2017/11/03/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Hello World
+        
+      </div>
+    </a>
+  
+  
+</nav>
 
   
+</article>
 
 </section>
         
