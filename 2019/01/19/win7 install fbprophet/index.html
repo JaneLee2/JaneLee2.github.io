@@ -7,7 +7,7 @@
     
 
     <title>
-      Linux Python3.6 安装 | Jennie Site to Record 0&amp;1 
+      Metabase介绍 | Jennie Site to Record 0&amp;1 
     </title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -16,16 +16,19 @@
     
     
 
-    <meta name="description" content="Python3Centos7默认自带Python是2.7.5，用到的fbprophet算法需求的Python3（gcc版本要求高）。因此在Centos7 上安装两个Python：Python2和Python3 物理机安装 采用rpm包安装Python3   yum install -y https://centos7.iuscommunity.org/ius-release.rpm    yum">
+    <meta name="description" content="#windows安装fbprophet在windows上安装fbprophet最开始先尝试python或winpython，再使用pip安装fbprophet，遇到诸多问题，后边看到作者建议使用anaconda作为Python解释来安装，下面将大致步骤记录如下： 系统windows7 64位 python3.5 visual studio 2015 python3.6 visual studio">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Linux Python3.6 安装 | Jennie Site to Record 0&amp;1">
-<meta property="og:url" content="http://yoursite.com/2019/01/19/Python3 install/index.html">
+<meta property="og:title" content="Metabase介绍 | Jennie Site to Record 0&amp;1">
+<meta property="og:url" content="http://yoursite.com/2019/01/19/win7 install fbprophet/index.html">
 <meta property="og:site_name" content="Jennie Site to Record 0&amp;1">
-<meta property="og:description" content="Python3Centos7默认自带Python是2.7.5，用到的fbprophet算法需求的Python3（gcc版本要求高）。因此在Centos7 上安装两个Python：Python2和Python3 物理机安装 采用rpm包安装Python3   yum install -y https://centos7.iuscommunity.org/ius-release.rpm    yum">
-<meta property="og:updated_time" content="2019-01-19T06:12:51.250Z">
+<meta property="og:description" content="#windows安装fbprophet在windows上安装fbprophet最开始先尝试python或winpython，再使用pip安装fbprophet，遇到诸多问题，后边看到作者建议使用anaconda作为Python解释来安装，下面将大致步骤记录如下： 系统windows7 64位 python3.5 visual studio 2015 python3.6 visual studio">
+<meta property="og:image" content="https://i.imgur.com/uPUwPnP.png">
+<meta property="og:image" content="https://i.imgur.com/yOBoITz.png">
+<meta property="og:updated_time" content="2019-01-19T06:14:37.237Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Linux Python3.6 安装 | Jennie Site to Record 0&amp;1">
-<meta name="twitter:description" content="Python3Centos7默认自带Python是2.7.5，用到的fbprophet算法需求的Python3（gcc版本要求高）。因此在Centos7 上安装两个Python：Python2和Python3 物理机安装 采用rpm包安装Python3   yum install -y https://centos7.iuscommunity.org/ius-release.rpm    yum">
+<meta name="twitter:title" content="Metabase介绍 | Jennie Site to Record 0&amp;1">
+<meta name="twitter:description" content="#windows安装fbprophet在windows上安装fbprophet最开始先尝试python或winpython，再使用pip安装fbprophet，遇到诸多问题，后边看到作者建议使用anaconda作为Python解释来安装，下面将大致步骤记录如下： 系统windows7 64位 python3.5 visual studio 2015 python3.6 visual studio">
+<meta name="twitter:image" content="https://i.imgur.com/uPUwPnP.png">
     
     
     
@@ -193,7 +196,7 @@ classes that you can use:
 
   <header class="post-header">
     
-    <h1 class="post-title">Linux Python3.6 安装</h1>
+    <h1 class="post-title">Metabase介绍</h1>
 
     
 
@@ -219,24 +222,17 @@ classes that you can use:
   </header>
 
   <section id="post-content" class="article-content post">
-    <h1 id="Python3"><a href="#Python3" class="headerlink" title="Python3"></a>Python3</h1><p>Centos7默认自带Python是2.7.5，用到的fbprophet算法需求的Python3（gcc版本要求高）。因此在Centos7 上安装两个Python：Python2和Python3</p>
-<h2 id="物理机安装"><a href="#物理机安装" class="headerlink" title="物理机安装"></a>物理机安装</h2><ol>
-<li><p>采用rpm包安装Python3  </p>
-<pre><code>yum install -y https://centos7.iuscommunity.org/ius-release.rpm   
-yum makecache   
-yum install -y python36u python36u-libs python36u-devel python36u-pip   
-python3.6 -V
-</code></pre></li>
-<li><p>安装更新gcc（4.8.5）</p>
-<pre><code>yum install gcc gcc-c++
-</code></pre></li>
-<li><p>安装其他所需包        </p>
-<pre><code>pip3.6 install pandas   
-pip3.6 install fbprophet
-pip3.6 install pymongo
-pip3.6 install scikit-learn
-</code></pre></li>
+    <p>#windows安装fbprophet<br>在windows上安装fbprophet最开始先尝试python或winpython，再使用pip安装fbprophet，遇到诸多问题，后边看到作者建议使用anaconda作为Python解释来安装，下面将大致步骤记录如下：</p>
+<h2 id="系统"><a href="#系统" class="headerlink" title="系统"></a>系统</h2><pre><code>windows7 64位
+python3.5 visual studio 2015
+python3.6 visual studio 2017
+</code></pre><h2 id="第一步-C"><a href="#第一步-C" class="headerlink" title="第一步  C++"></a>第一步  C++</h2><p>安装C++编译器<a href="http://https://aka.ms/vs/15/release/vs_buildtools.exe" target="_blank" rel="external">Microsoft Visual C++ Build Tools</a></p>
+<h2 id="第二步-Anacoda"><a href="#第二步-Anacoda" class="headerlink" title="第二步 Anacoda"></a>第二步 Anacoda</h2><ol>
+<li><a href="https://www.anaconda.com/download/#windows" target="_blank" rel="external">安装Anaconda</a>（注意安装路径不要有空格）</li>
+<li>添加国内清华镜像<br>1） 从开始菜单打开anaconda的客户端<br><img src="https://i.imgur.com/uPUwPnP.png" alt=""><br>2）运行 conda config –add channels <a href="https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/" target="_blank" rel="external">https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/</a><br>3) 运行 conda config –add channels <a href="https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/" target="_blank" rel="external">https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/</a><br>4）运行 conda config –add channels <a href="https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/msys2/" target="_blank" rel="external">https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/msys2/</a><br>5）conda config –set show_channel_urls yes<br>6）使用everything找到.condarc文件目录（默认在C:\Users\用户名XXX.condarc）将channels的defaults行删除，保存。<br>7）运行conda config –show查看配置      <h2 id="第三步-Gcc"><a href="#第三步-Gcc" class="headerlink" title="第三步 Gcc"></a>第三步 Gcc</h2><a href="https://www.jianshu.com/p/ff24a81f3637" target="_blank" rel="external">安装gcc编译器</a></li>
 </ol>
+<h2 id="第四步-fbprophet"><a href="#第四步-fbprophet" class="headerlink" title="第四步 fbprophet"></a>第四步 fbprophet</h2><pre><code>conda install -c conda-forge fbprophet
+</code></pre><h2 id="第五步-pycharm中引入anaconda的Python解释器"><a href="#第五步-pycharm中引入anaconda的Python解释器" class="headerlink" title="第五步 pycharm中引入anaconda的Python解释器"></a>第五步 pycharm中引入anaconda的Python解释器</h2><p><img src="https://i.imgur.com/yOBoITz.png" alt=""></p>
 
   </section>
 
