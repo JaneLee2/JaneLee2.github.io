@@ -16,16 +16,16 @@
     
     
 
-    <meta name="description" content="Kmeans是一种聚类算法，而聚类算法又隶属于非监督学习，即它可以将相似的对象归到同一个类中，即同类中的对象相似度很高，不同类中的对象相似度很低，有点像全自动分类技术。以下内容将主要介绍Kmeans算法的简单原理及库使用方法。 ##一、Kmeans算法原理简介Kmeans算法的名字（k、means）就已经总结了Kmeans算法的精髓思想，其一是它可以发现K个不同的簇群，其二是计算隶属该簇的所有对象">
+    <meta name="description" content="Kmeans是一种聚类算法，而聚类算法又隶属于非监督学习，即它可以将相似的对象归到同一个类中，即同类中的对象相似度很高，不同类中的对象相似度很低，有点像全自动分类技术。以下内容将主要介绍Kmeans算法的简单原理及库使用方法。 一、Kmeans算法原理简介Kmeans算法的名字（k、means）就已经总结了Kmeans算法的精髓思想，其一是它可以发现K个不同的簇群，其二是计算隶属该簇的所有对象均值">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Kmeans使用教程（Java版） | Jennie Site to Record 0&amp;1">
 <meta property="og:url" content="http://yoursite.com/2017/11/03/Kmeans/index.html">
 <meta property="og:site_name" content="Jennie Site to Record 0&amp;1">
-<meta property="og:description" content="Kmeans是一种聚类算法，而聚类算法又隶属于非监督学习，即它可以将相似的对象归到同一个类中，即同类中的对象相似度很高，不同类中的对象相似度很低，有点像全自动分类技术。以下内容将主要介绍Kmeans算法的简单原理及库使用方法。 ##一、Kmeans算法原理简介Kmeans算法的名字（k、means）就已经总结了Kmeans算法的精髓思想，其一是它可以发现K个不同的簇群，其二是计算隶属该簇的所有对象">
-<meta property="og:updated_time" content="2017-11-03T03:03:37.961Z">
+<meta property="og:description" content="Kmeans是一种聚类算法，而聚类算法又隶属于非监督学习，即它可以将相似的对象归到同一个类中，即同类中的对象相似度很高，不同类中的对象相似度很低，有点像全自动分类技术。以下内容将主要介绍Kmeans算法的简单原理及库使用方法。 一、Kmeans算法原理简介Kmeans算法的名字（k、means）就已经总结了Kmeans算法的精髓思想，其一是它可以发现K个不同的簇群，其二是计算隶属该簇的所有对象均值">
+<meta property="og:updated_time" content="2019-01-19T04:12:58.125Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Kmeans使用教程（Java版） | Jennie Site to Record 0&amp;1">
-<meta name="twitter:description" content="Kmeans是一种聚类算法，而聚类算法又隶属于非监督学习，即它可以将相似的对象归到同一个类中，即同类中的对象相似度很高，不同类中的对象相似度很低，有点像全自动分类技术。以下内容将主要介绍Kmeans算法的简单原理及库使用方法。 ##一、Kmeans算法原理简介Kmeans算法的名字（k、means）就已经总结了Kmeans算法的精髓思想，其一是它可以发现K个不同的簇群，其二是计算隶属该簇的所有对象">
+<meta name="twitter:description" content="Kmeans是一种聚类算法，而聚类算法又隶属于非监督学习，即它可以将相似的对象归到同一个类中，即同类中的对象相似度很高，不同类中的对象相似度很低，有点像全自动分类技术。以下内容将主要介绍Kmeans算法的简单原理及库使用方法。 一、Kmeans算法原理简介Kmeans算法的名字（k、means）就已经总结了Kmeans算法的精髓思想，其一是它可以发现K个不同的簇群，其二是计算隶属该簇的所有对象均值">
     
     
     
@@ -220,7 +220,7 @@ classes that you can use:
 
   <section id="post-content" class="article-content post">
     <p>Kmeans是一种聚类算法，而聚类算法又隶属于非监督学习，即它可以将相似的对象归到同一个类中，即同类中的对象相似度很高，不同类中的对象相似度很低，有点像全自动分类技术。以下内容将主要介绍Kmeans算法的简单原理及库使用方法。</p>
-<p>##一、Kmeans算法原理简介<br>Kmeans算法的名字（k、means）就已经总结了Kmeans算法的精髓思想，其一是它可以发现K个不同的簇群，其二是计算隶属该簇的所有对象均值作为该簇群的中心点。                                                                                                                                                                            </p>
+<h2 id="一、Kmeans算法原理简介"><a href="#一、Kmeans算法原理简介" class="headerlink" title="一、Kmeans算法原理简介"></a>一、Kmeans算法原理简介</h2><p>Kmeans算法的名字（k、means）就已经总结了Kmeans算法的精髓思想，其一是它可以发现K个不同的簇群，其二是计算隶属该簇的所有对象均值作为该簇群的中心点。                                                                                                                                                                            </p>
 <p><strong>1. 缺点：</strong>容易收敛到局部最小值、必须人为指定K值<br><strong>2. 适用数据类型：</strong>数值型数据<br><strong>3. 算法流程：</strong></p>
 <pre><code>step1: 选取k值,可选距离指标。
 step2: 随机确定K个初始点作为质心。
@@ -228,7 +228,7 @@ step3: 根据距离大小将数据集中的每个点分配到离其最近的簇�
 step4: 每个簇的中心更新为该簇所有点的平均值。
 step5: 跳转至step3
 step6: 判断：如果任意一个点的簇分配结果发生改变，跳转至step4，否则停止循环，结束聚类过程。
-</code></pre><p>##二、Kmeans库使用方法<br>这一小节旨在通过一个小的demo例子来指导Kmeans算法的使用，主要涉及主要函数简介、demo、真实数据集验证。<br><strong>1. 主要函数简介：</strong>   </p>
+</code></pre><h2 id="二、Kmeans库使用方法"><a href="#二、Kmeans库使用方法" class="headerlink" title="二、Kmeans库使用方法"></a>二、Kmeans库使用方法</h2><p>这一小节旨在通过一个小的demo例子来指导Kmeans算法的使用，主要涉及主要函数简介、demo、真实数据集验证。<br><strong>1. 主要函数简介：</strong>   </p>
 <pre><code>1. kmeans.init(int k,double[][] items) 
    接收聚类个数K以及特征数据集，并随机初始化聚类中心以及聚类过程中用到的参数值。
 2. kmeans.trainEclidAvgCenter()
@@ -259,11 +259,10 @@ step6: 判断：如果任意一个点的簇分配结果发生改变，跳转至s
 <p>Iris也称鸢尾花卉数据集，是一类多重变量分析的数据集。通过花萼长度，花萼宽度，花瓣长度，花瓣宽度4个属性预测鸢尾花卉属于（Setosa，Versicolour，Virginica）三个种类中的哪一类。                      </p>
 </blockquote>
 <p><strong>数据准确率：</strong> (50+47+36)/(50+5+50) = 85.8%<br>可以看出Setosa全对，而Versicolour将3个聚在了Virginica类中，而Virginica中将14个则聚在了Versicolour类中。<br><strong>运行时间：</strong>4毫秒<br>综上，在实际大规模的数据上，兼准确率及运行时间综合考虑，是可以采用Kmeans算法的。</p>
-<p>##三、PS.<br><strong>1.参考文献：</strong></p>
+<h2 id="三、PS"><a href="#三、PS" class="headerlink" title="三、PS."></a>三、PS.</h2><p><strong>1.参考文献：</strong></p>
 <pre><code>1.Peter Harrington， 机器学习实战
 2.最流行的4个机器学习数据集(http://www.jianshu.com/p/be23b3870d2e)
-</code></pre><p><strong>2.致谢：</strong> </p>
-
+</code></pre>
   </section>
 
   <section class="post-comments">
